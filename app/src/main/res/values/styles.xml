@@ -1,0 +1,60 @@
+<resources>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorEditText</item>
+        <item name="colorControlHighlight">@color/colorEditText</item>
+        <!--<item name="android:textColorHint">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorEditText</item>
+    </style>
+
+    <style name="CardViewTextHeader" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/colorCardViewText</item>
+    </style>
+
+    <style name="CardViewTextTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CardViewTextSubtitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="CardViewTextSubtitleRed" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/colorCardViewTextRed</item>
+    </style>
+
+
+    <style name="CardViewText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorCardViewText</item>
+    </style>
+
+    <style name="onboarding_welcome_text" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="onboarding_guide_text" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="onboarding_step_number_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="onboarding_step_body_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.se8.medipal.activities.consumptionhistory.ConsumptionHistoryActivity">
+
+    <item
+        android:id="@+id/action_generate"
+        android:orderInCategory="10"
+        android:title="@string/action_generate_medical_reports"
+        android:icon="@drawable/ic_generate"
+        app:showAsAction="ifRoom"/>
+</menu>

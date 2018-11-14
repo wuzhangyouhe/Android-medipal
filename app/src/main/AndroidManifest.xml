@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.edu.nus.iss.se8.medipal">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round_2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".receivers.ReminderBroadcastReceiver" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.biodata.BiodataActivity"
+            android:label="@string/title_activity_biodata"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.report.ReportActivity"
+            android:label="ReportActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.report.HelpActivity"
+            android:label="HelpActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicine.MedicineActivity"
+            android:label="@string/title_activity_medicine"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicine.AddMedicineActivity"
+            android:label="@string/title_activity_add_medicine"
+            android:parentActivityName=".activities.medicine.MedicineActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.medicine.MedicineActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicine.EditMedicineActivity"
+            android:label="EditMedicineActivity"
+            android:parentActivityName=".activities.medicine.MedicineActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.medicine.MedicineActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicine.CategoryActivity"
+            android:label="CategoryActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicine.AddCategoryActivity"
+            android:label="AddCategoryActivity"
+            android:parentActivityName=".activities.medicine.MedicineActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.medicine.MedicineActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicine.EditCategoryActivity"
+            android:label="EditCategoryActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.appointments.AddAppointmentActivity"
+            android:label="@string/title_activity_add_appointment"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.appointments.EditAppointmentActivity"
+            android:label="@string/title_activity_edit_appointment"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.emergencycontacts.AddEmergencyContactActivity"
+            android:label="@string/title_activity_add_emergency_contact"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.emergencycontacts.EditEmergencyContactActivity"
+            android:label="@string/title_activity_edit_emergency_contact"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.emergencycontacts.PrioritiseEmergencyContactsActivity"
+            android:label="@string/title_activity_prioritise_emergency_contact"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicalrecords.AddMedicalRecordActivity"
+            android:label="@string/title_activity_add_medical_record"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.healthmeasurements.HealthMeasurementActivity"
+            android:label="@string/title_activity_health_measurement"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.healthmeasurements.AddEditHealthMeasurementActivity"
+            android:label="@string/title_activity_health_measurement"
+            android:parentActivityName=".activities.healthmeasurements.HealthMeasurementActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.healthmeasurements.HealthMeasurementActivity" />
+        </activity>
+        <activity
+            android:name=".activities.medicineprescriptions.AddEditMedicinePrescriptionActivity"
+            android:label="@string/title_activity_add_edit_medicine_prescription"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.consumptionhistory.ConsumptionHistoryActivity"
+            android:label="@string/title_activity_consumption_history"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.reminders.EditReminderActivity"
+            android:label="@string/title_activity_edit_reminder"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.se8.medipal.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.OnboardingActivity"
+            android:label="@string/title_activity_onboarding"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

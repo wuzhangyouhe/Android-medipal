@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.edu.nus.iss.se8.medipal.activities.OnboardingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/includeToolbar"
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/imageViewMedipalImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/includeToolbar"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:src="@drawable/image_medipal" />
+
+        <TextView
+            android:id="@+id/textViewOnboardingWelcomeText"
+            style="@style/onboarding_welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewMedipalImage"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="Welcome to MediPal!" />
+
+        <TextView
+            android:id="@+id/textViewOnboardingGuideText"
+            style="@style/onboarding_guide_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewOnboardingWelcomeText"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin_double"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_double"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/onboarding_guide_text" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOnboardingStep1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewOnboardingGuideText"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/onboarding_step_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/onboarding_step_number_weight"
+                android:text="Step 1" />
+
+            <TextView
+                android:id="@+id/textViewOnboardingStep1"
+                style="@style/onboarding_step_body_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/onboarding_step_body_weight"
+                android:text="Enter personal biodata" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewOnboardingStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutOnboardingStep1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/onboarding_step_1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOnboardingStep2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewOnboardingStep1"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/onboarding_step_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/onboarding_step_number_weight"
+                android:text="Step 2" />
+
+            <TextView
+                android:id="@+id/textViewOnboardingStep2"
+                style="@style/onboarding_step_body_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/onboarding_step_body_weight"
+                android:text="Enter medical records" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewOnboardingStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutOnboardingStep2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/onboarding_step_2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOnboardingStep3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewOnboardingStep2"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/onboarding_step_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/onboarding_step_number_weight"
+                android:text="Step 3" />
+
+            <TextView
+                android:id="@+id/textViewOnboardingStep3"
+                style="@style/onboarding_step_body_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/onboarding_step_body_weight"
+                android:text="Enter medicine prescriptions" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewOnboardingStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutOnboardingStep3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/onboarding_step_3" />
+
+        <Button
+            android:id="@+id/buttonOnboardingStartUsingMedipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewOnboardingStep3"
+            android:layout_marginTop="@dimen/activity_vertical_margin_double"
+            android:text="Start Using MediPal" />
+
+    </RelativeLayout>
+
+</ScrollView>

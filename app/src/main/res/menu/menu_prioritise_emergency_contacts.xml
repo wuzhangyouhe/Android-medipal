@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sg.edu.nus.iss.se8.medipal.activities.consumptionhistory.ConsumptionHistoryActivity">
+
+    <item
+        android:id="@+id/action_done"
+        android:orderInCategory="10"
+        android:title="@string/action_done_sort_emergency_contacts"
+        android:icon="@drawable/ic_done"
+        app:showAsAction="ifRoom"/>
+
+</menu>
